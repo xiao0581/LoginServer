@@ -49,7 +49,7 @@ namespace LoginServer.Controllers
             }
 
             var token = GenerateJwtToken(user);
-            return Ok(new { token });
+            return Ok(new { token,username = user.Username });
         }
 
         private string GenerateJwtToken(User user)
