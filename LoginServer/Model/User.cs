@@ -23,10 +23,10 @@ namespace LoginServer.Model
         public string Email { get; set; }
         [Required]
         [MaxLength(100)]
-        public string FullName { get; set; } // 新增全名
+        public string FullName { get; set; } 
 
-        [MaxLength(200)] // 地址可以不是必填项
-        public string Address { get; set; } // 新增地址
+        [MaxLength(200)] 
+        public string Address { get; set; } 
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
